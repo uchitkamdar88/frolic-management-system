@@ -1,0 +1,222 @@
+cd backend
+npm start
+Server running on: http://localhost:8000
+
+
+
+POST    http://localhost:8000/users/add
+GET     http://localhost:8000/users
+GET     http://localhost:8000/users/:id
+PUT     http://localhost:8000/users/:id
+DELETE  http://localhost:8000/users/:id
+
+{
+  "user_id": "U001",
+  "userName": "Dhavnik Zala",
+  "email": "dhavnik@gmail.com",
+  "phone": "8238588865",
+  "password": "DzaLa@12345",
+  "isAdmin": true
+}
+
+{
+  "user_id": "U002",
+  "userName": "Uchit Kamdar",
+  "email": "uchitkamdar88@gmail.com",
+  "phone": "9426720230",
+  "password": "Uchit@051206",
+  "isAdmin": false
+}
+
+
+
+POST    http://localhost:8000/department/add
+GET     http://localhost:8000/department
+GET     http://localhost:8000/department/:id
+PUT     http://localhost:8000/department/:id
+DELETE  http://localhost:8000/department/:id
+
+{
+  "dept_id": "D001",
+  "departmentName": "Computer Science & Engineering",
+  "departmentDescription": "Computer Engineering Department",
+  "institute_id": "I001",
+  "coordinator_id": "U001"
+}
+
+
+
+POST    http://localhost:8000/events/add
+GET     http://localhost:8000/events
+GET     http://localhost:8000/events/:id
+PUT     http://localhost:8000/events/:id
+DELETE  http://localhost:8000/events/:id
+
+{
+  "event_id": "E001",
+  "eventName": "The Filmy Paglu",
+  "eventTagline": "Entertainment Ka Overdose",
+  "eventImage": "FilmyPaglu.jpg",
+  "eventDescription": "Fun-filled entertainment event featuring movie-based games, drama, and activities.",
+  "groupMinParticipants": 4,
+  "groupMaxParticipants": 4,
+  "eventFees": 200,
+  "eventFirstPrize": "7000",
+  "eventSecondPrize": "5000",
+  "eventThirdPrize": "3000",
+  "isTechnical": false,
+  "eventCoordinator_id": "U001",
+  "eventLocation": "Auditorium 10",
+  "maxGroupsAllowed": 25
+}
+
+
+
+POST    http://localhost:8000/event-winners/add
+GET     http://localhost:8000/event-winners
+GET     http://localhost:8000/event-winners/:id
+PUT     http://localhost:8000/event-winners/:id
+DELETE  http://localhost:8000/event-winners/:id
+
+{
+  "event_id": "E001",
+  "group_id": "G001",
+  "position": 1,
+  "prizeAmount": "7000"
+}
+
+
+
+POST    http://localhost:8000/groups/add
+GET     http://localhost:8000/groups
+GET     http://localhost:8000/groups/:id
+PUT     http://localhost:8000/groups/:id
+DELETE  http://localhost:8000/groups/:id
+
+{
+  "group_id": "G001",
+  "groupName": "Filmy Fauj",
+  "event_id": "E001",
+  "leader_id": "U002",
+  "totalMembers": 4
+}
+
+
+
+POST    http://localhost:8000/institute/add
+GET     http://localhost:8000/institute
+GET     http://localhost:8000/institute/:id
+PUT     http://localhost:8000/institute/:id
+DELETE  http://localhost:8000/institute/:id
+
+{
+  "institute_id": "I001",
+  "instituteName": "Darshan University",
+  "instituteAddress": "Hadala, Rajkot, Gujarat",
+  "instituteEmail": "mailto:info@darshan.ac.in",
+  "institutePhone": "9727747310"
+}
+
+
+
+POST    http://localhost:8000/participants/add
+GET     http://localhost:8000/participants
+GET     http://localhost:8000/participants/:id
+PUT     http://localhost:8000/participants/:id
+DELETE  http://localhost:8000/participants/:id
+
+{
+  "participant_id": "P001",
+  "user_id": "U002",
+  "event_id": "E001",
+  "group_id": "G001"
+}
+
+
+
+
+
+
+
+
+
+For Test
+
+POST    http://localhost:8000/users/add
+
+{
+  "user_id": "U003",
+  "userName": "Dhruv Machchhar",
+  "email": "dhruvmachchhar6@gmail.com",
+  "phone": "7069301205",
+  "password": "Dhruv@301205",
+  "isAdmin": false
+}
+
+POST    http://localhost:8000/department/add
+
+{
+  "dept_id": "D002",
+  "departmentName": "Civil Engineering",
+  "departmentDescription": "Civil Engineering Department",
+  "institute_id": "I001",
+  "coordinator_id": "U001"
+}
+
+POST    http://localhost:8000/events/add
+
+{
+  "event_id": "E002",
+  "eventName": "Gully Cricket",
+  "eventTagline": "Where Legends Begin",
+  "eventImage": "GullyCricket.jpg",
+  "eventDescription": "Street-style cricket tournament with simplified rules and high energy.",
+  "groupMinParticipants": 11,
+  "groupMaxParticipants": 11,
+  "eventFees": 200,
+  "eventFirstPrize": "7000",
+  "eventSecondPrize": "5000",
+  "eventThirdPrize": "3000",
+  "isTechnical": false,
+  "eventCoordinator_id": "U001",
+  "eventLocation": "Cricket Ground",
+  "maxGroupsAllowed": 10
+}
+
+POST    http://localhost:8000/event-winners/add
+
+{
+  "event_id": "E002",
+  "group_id": "G002",
+  "position": 2,
+  "prizeAmount": "5000"
+}
+
+POST    http://localhost:8000/groups/add
+
+{
+  "group_id": "G002",
+  "groupName": "Royal Titens",
+  "event_id": "E002",
+  "leader_id": "U003",
+  "totalMembers": 11
+}
+
+POST    http://localhost:8000/institute/add
+
+{
+  "institute_id": "I002",
+  "instituteName": "Marwadi University",
+  "instituteAddress": "Bedi, Rajkot, Gujarat",
+  "instituteEmail": "mailto:info@marwadiuniversity.ac.in",
+  "institutePhone": "8980030090"
+}
+
+POST    http://localhost:8000/participants/add
+
+{
+  "participant_id": "P002",
+  "user_id": "U003",
+  "event_id": "E002",
+  "group_id": "G002"
+}
