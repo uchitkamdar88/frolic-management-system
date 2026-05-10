@@ -142,8 +142,6 @@ Frolic_Management_2026/
 │
 ├── package.json
 ├── package-lock.json
-├── CURDAPI.txt
-└── Frolic_SRS.pdf
 ```
 
 ---
