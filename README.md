@@ -148,42 +148,6 @@ Frolic_Management_2026/
 
 ---
 
-# Important Note Before Uploading to GitHub
-
-This project currently contains:
-- node_modules folders
-- package-lock files
-- environment files
-
-You should NOT upload node_modules to GitHub because it contains thousands of unnecessary files.
-
-Before uploading the project:
-
-## Delete These Folders
-```bash
-frontend/node_modules
-backend/node_modules
-node_modules
-```
-
----
-
-# Create .gitignore File
-
-Create a `.gitignore` file in the root directory and add the following:
-
-```gitignore
-node_modules/
-.env
-build/
-dist/
-coverage/
-```
-
-This prevents unnecessary and sensitive files from being uploaded.
-
----
-
 # Requirements
 
 Install the following software before running the project:
@@ -498,5 +462,4 @@ This project is not intended for commercial production use.
 
 # Author
 
-Project developed for Frolic Event Management at Darshan University, Rajkot.
-
+Uchit Kamdar
